@@ -1,0 +1,22 @@
+{% import 'core.html' as core %}
+<html>
+  {{ core.head(a) }}
+  <body>
+    {{ core.jumbotron(b) }}
+    <div class="container">
+      <div data-aos="fade-right" class="alert alert-danger" role="alert">
+        <center>
+          <h5 class="font-text-bold"><i class="fas fa-exclamation-circle"></i> Error</h5><br>
+          <pre>Please check your url</pre>
+        </center>
+      </div>
+    </div>
+    <center>
+      <a href="{{ url_for('index') }}">
+        <button data-aos="fade-left" type="submit" class="btn"><i class="fas fa-arrow-left"></i> Back</button>
+      </a>
+    </center><br>
+    {{ core.wm(c) }}
+    {{ core.js(d) }}
+  </body>
+</html>
