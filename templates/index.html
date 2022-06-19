@@ -1,0 +1,22 @@
+{% import 'core.html' as core %}
+<html>
+  {{ core.head(a) }}
+  <body>
+    {{ core.jumbotron(b) }}
+    <center>
+      <img data-aos="fade-left" style="display: block; max-width: 60%; height: auto;" class="col-md-12 img-fluid rounded img-size" src="{{ url_for('static', filename='tt.png') }}"/>
+    </center><br>
+    <form data-aos="fade-up" method="POST">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input class="form-control" type="search" name="url" placeholder="Paste here..."/>
+        </div>
+      </div>
+      <center>
+        <button class="btn" type="submit">Submit <i class="fas fa-cogs"></i></button>
+      </center>
+    </form>
+    {{ core.wm(c) }}
+    {{ core.js(d) }}
+  </body>
+</html>
