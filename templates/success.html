@@ -1,0 +1,23 @@
+{% import 'core.html' as core %}
+<html>
+  {{ core.head(a) }}
+  <body>
+    {{ core.jumbotron(b) }}
+    <center>
+      <div data-aos="fade-up" class="card col-md-12" style="width: 18rem;">
+        <img src="{{ image }}" class="card-img-top"/>
+        <div class="card-body">
+          <h5 class="card-title">{{ name }}</h5><br>
+              <center>
+                <a href="{{ standar }}" class="btn">SD Quality</a>
+              </center><br>
+              <center>
+                <a href="{{ hd }}" class="btn">HD Quality</a>
+              </center>
+        </div>
+      </div>
+    </center><br>
+    {{ core.wm(c) }}
+    {{ core.js(d) }}
+  </body>
+</html>
